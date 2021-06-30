@@ -1,0 +1,43 @@
+/*Body*/
+@import "../base/variables";
+@import "../base/listmaps";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "sansBold";
+    src: url(/fontFamily/DM_Sans/DMSans-Bold.ttf) format("ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "sansItalic";
+    src: url(/fontFamily/DM_Sans/DMSans-Medium.ttf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "sansBoldItalic";
+    src: url(/fontFamily/DM_Sans/DMSans-BoldItalic.ttf) format("");
+    font-display: swap;
+}
+
+
+body{
+    background-color: map-get($maps , dark);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}

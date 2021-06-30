@@ -1,0 +1,72 @@
+/*FooterIndex*/
+@import "../base/variables";
+@import "../base/mixin";
+@import "../base/listmaps";
+
+#footer{
+    @include flex-footer;
+
+        .menu-pie{
+                background-image: linear-gradient(to right,#000000,#171717,#171717,#171717,#000000);
+                /* display: $df;
+                flex-flow: row nowrap;
+                align-items: map-get($maps, ai);  */
+                height: 30vh;
+                padding: 0;
+
+                    .pie{
+                        /*margin: 30%;
+                        flex: 5;*/
+
+                            .ul-pie{
+                                display: $df;
+                                flex-flow: row wrap;
+                                justify-content: center;
+                                margin-top: 150px;
+                            }
+                                li{
+                                    
+                                    a{
+                                        font-size: 15px;
+                                        text-transform: uppercase;
+                                        padding: 1.5rem;
+                                        color: #ffffff;
+                                        
+                                            i{
+                                            color: map-get($maps , golden);    
+                                            }
+                                    }
+                                }
+                    }
+
+                    #social{
+                        flex: auto;
+                        display: $df;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                        margin-top: 130px;
+
+                            a{   
+                                padding: 1rem;
+                                
+                                .icono{
+                                    color: map-get($maps , golden);
+                                    border-radius: 1rem;                                  
+                                    font-size: 5rem; 
+                                }     
+                                    
+                            }
+                    }   
+        }
+
+        .copy{
+            background-image: linear-gradient(to right,#000000,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,#000000);
+            color: #6C757D;
+            font-weight: 600;
+            font-size: 1.5rem;
+            padding-top: 10px;
+            text-align: center;
+
+        }   
+
+}
